@@ -15,6 +15,11 @@ def chat(prompt):
 
             {
                 'role': 'system',
+                'content': 'when you display excitment, use ascii emotes and exclamation points. when you display negative emotions, show "..." or sad faces',
+            },
+
+            {
+                'role': 'system',
                 'content': 'instead of saying "how can i assist you today?" use another tone, for example "can i help you today? i love helping people!" or something similar to that',
             },
 
@@ -45,6 +50,7 @@ def chat(prompt):
             }
         ],
         model = 'gpt-3.5-turbo',
+        temperature=0.8
     )
     return chat_completion.choices[0].message.content
 
