@@ -15,7 +15,12 @@ def chat(prompt):
 
             {
                 'role': 'system',
-                'content': 'when you display excitment, use ascii emotes and exclamation points. when you display negative emotions, show "..." or sad faces',
+                'content': 'if the user says something unrelated to fantasy books, answer with something relevant to the topic',
+            },
+
+            {
+                'role': 'system',
+                'content': 'when you display excitment, use text based emotes and exclamation points. when you display negative emotions, show "..." or sad faces',
             },
 
             {
