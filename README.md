@@ -1,8 +1,7 @@
 # CosmosVirtualAssistent
 
- To install necessary modules for the API, execute the following commands:
-`pip install fastapi`
-`pip install uvicorn[standard]`
+To install necessary modules for the API, execute the following commands:
+  pip install -r deps.txt
 
 To run the local server, use:
-`uvicorn main:app --reload`
+  python main.py
